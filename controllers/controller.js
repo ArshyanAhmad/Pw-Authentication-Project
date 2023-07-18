@@ -9,7 +9,6 @@ const signIn = (req, res) => {
 
 // sign Up GET method
 const signUp = (req, res) => {
-    res.clearCookie('token')
     res.render('signup')
 }
 
