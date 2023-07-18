@@ -18,7 +18,4 @@ ROUTES WILL BE THIS
 2. '/signIn'
 3. '/'
 --> USE ANOTHER ROUTES THEN ITS GIVE PAGE NOT FOUND
-=======
-# Pw-Authentication-Project
- The PW Authentication Project is a project focused on implementing secure user authentication and authorization functionality in a web application. The project aims to ensure that only authenticated users have access to certain features or resources within the application, while also protecting sensitive user data.
->>>>>>> main
+
