@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user | <%= locals.name%>
+    </title>
+    <link rel="stylesheet" href="user.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile">
+            <form action="/logout" method="get">
+                <div class="img">
+                    <img src="https://media.photographycourse.net/wp-content/uploads/2008/03/08165648/Light-And-The-Human-Eye-1.jpg"
+                        alt="human eye image">
+                </div>
+
+                <h2 class="username">
+                    <%= locals.username%>
+                </h2>
+
+                <div class="userInfo">
+                    <h3>
+                        <%= locals.bio%>
+                    </h3>
+                    <h3>
+                        <%= locals.email%>
+                    </h3>
+                    <h3>Followers: 1000</h3>
+                </div>
+
+                <button class="btn" type="submit">Log Out</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

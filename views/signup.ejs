@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up - Form</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h2 class="heading">Instagram SignUp</h2>
+
+        <form class="form" action="/signup" method="post">
+
+            <ul class="inputs">
+
+                <li>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="Enter your Name">
+                </li>
+
+                <li>
+                    <label for="username">Username</label>
+                    <input type="text" name="username" placeholder="@username">
+                </li>
+
+                <li>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Enter your Email">
+                </li>
+
+                <li>
+                    <label for="Password">Password</label>
+                    <input type="password" name="password" placeholder="Enter your Password">
+                </li>
+
+                <li>
+                    <label for="bio">bio</label>
+                    <input type="text" name="bio" placeholder="Enter your Bio">
+                </li>
+
+            </ul>
+
+            <div class="bottom">
+                <p class="message">
+                    <%= locals.message%>
+                </p>
+                <button class="btn" type="submit">Sign Up</button>
+                <p class="route"><a href="#">Forgot Password</a> / <a href="signin">Log In</a></p>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+
+</html>

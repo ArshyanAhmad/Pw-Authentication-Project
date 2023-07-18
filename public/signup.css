@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body,
+html {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    background-color: rgba(204, 174, 174, 0.329);
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 35%;
+    margin: 0 auto;
+    box-shadow: 2px 0 13px rgba(0, 0, 0, 0.4);
+    height: 82%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+label {
+    font-size: 17px;
+    padding-bottom: 5px;
+    color: #222;
+    display: block;
+}
+
+.form .inputs {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputs li {
+    width: 100%;
+}
+
+.inputs li input {
+    width: 100%;
+    height: 45px;
+    padding: 5px 10px;
+    border: 0;
+    outline: none;
+    color: black;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid rgba(65, 105, 225, 0.281);
+    transition: all .3s ease;
+}
+
+
+.inputs li input:focus {
+    background-color: rgba(65, 105, 225, 0.116);
+}
+
+.inputs li input::placeholder {
+    color: black;
+    font-size: 15px;
+}
+
+.bottom {
+    text-align: center;
+    margin-top: 25px;
+    position: relative;
+}
+
+.bottom .btn {
+    width: 95%;
+    height: 55px;
+    border-radius: 5px;
+    border: 1px solid royalblue;
+    outline: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    background-color: royalblue;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.bottom .btn:hover {
+    background-color: rgb(45, 91, 231);
+}
+
+.bottom p {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.bottom p a {
+    color: rgb(87, 81, 81);
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.bottom p a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.message {
+    position: absolute;
+    color: red;
+    font-size: 14px;
+    left: 3%;
+    bottom: 110%;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Form</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h2 class="heading">Instagram Login</h2>
+
+        <form class="form" method="post" action="/signin">
+
+            <ul class="inputs">
+
+                <li>
+                    <label for="username">Username</label>
+                    <input type="text" name="username" placeholder="@username">
+                </li>
+
+                <li>
+                    <label for="Password">Password</label>
+                    <input type="password" name="password" placeholder="Enter your Password">
+                </li>
+
+            </ul>
+
+
+            <div class="bottom">
+                <p class="message">
+                    <%= locals.message%>
+                </p>
+                <button class="btn" type="submit">Log In</button>
+                <p class="route"><a href="#">Forgot Password</a> / <a href="/signup">Sign Up</a></p>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
